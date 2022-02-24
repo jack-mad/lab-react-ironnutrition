@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import AddFood from './components/AddFood'
 import FoodBox from './components/FoodBox'

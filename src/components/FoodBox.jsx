@@ -4,11 +4,10 @@ import foods from '../foods.json';
 function FoodBox(props) {
   const items = props.foods
   return (
-    <Col>
-    {  
-    items.map((item,index) => {
-      return(
-        <Card key={index}
+    items.map((item, index) => {
+      return (
+        <Col >
+          <Card key={index}
             title={item.name}
             style={{ width: 230, height: 300, margin: 10 }}
           >
@@ -20,13 +19,11 @@ function FoodBox(props) {
             </p>
             <Button type="primary"> Delete </Button>
           </Card>
+        </Col>
       )
-          
-        
-      })
-      }
-    </Col>
-    )
+    })
+
+  )
 }
 
 export default FoodBox;
