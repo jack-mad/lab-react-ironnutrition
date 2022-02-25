@@ -9,8 +9,8 @@ import { Row, Divider, Button } from 'antd';
 function App() {
   return (
     <div className="App">
-      <AddFood />
-      <Button> Hide Form / Add New Food </Button>
+      <AddFood foods={foods}/>
+      
       
       <Divider>Food List</Divider>
 
